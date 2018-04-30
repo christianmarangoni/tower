@@ -1,24 +1,26 @@
 all:
-    children:
-        last_group:
-            hosts: test1
-            vars:
-                last_var: MYVALUE
-        other_group:
-            children:
-                group_x:
-                    hosts: test5
-            hosts:
-                test4:
-                    ansible_host: 127.0.0.1
-            vars:
-                g2_var2: value3
-    hosts:
-        a: '111'
-        b: '222'
-        c: '333'
-        test1: valuetest1
-        test2:
-            var1: value1var1
-    vars:
-        group_var1: value2groupvar1
+  children:
+    usa:
+      children:
+        southeast:
+          children:
+            atlanta:
+              hosts:
+                host1:
+                  vars:
+                    instancehost: 3a
+                host2:
+            raleigh:
+              hosts:
+                host2:
+                host3:
+          vars:
+            some_server: foo.southeast.example.com
+            halon_system_timeout: 30
+            self_destruct_countdown: 60
+            escape_pods: 2
+            instancegroup: 1a
+            instancegroup: 2a
+        northeast:
+        northwest:
+        southwest:
