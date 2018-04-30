@@ -1,15 +1,15 @@
 all:
   hosts:
     host3:
-      children:
-        atlanta:
-          hosts:
-            host1:
-              instancehost: 3a
-              instancehost: 2a
-            host2:
-      vars:
-        some_server: foo.southeast.example.com
-        halon_system_timeout: 30
-        self_destruct_countdown: 60
-        escape_pods: 2
+  children:
+    atlanta:
+      hosts:
+        host1:
+          instancehost: 3a
+          instancehost: 2a
+        host2:
+  vars:
+    some_server: foo.southeast.example.com
+    halon_system_timeout: 30
+    self_destruct_countdown: 60
+    escape_pods: 2
