@@ -3,9 +3,8 @@ all:
     atlanta:
       hosts:
         host1:
-          vars:
-            instancehost: 3a
-            instancehost: 2a
+          instancehost: 3a
+          instancehost: 2a
         host2:
   vars:
     some_server: foo.southeast.example.com
