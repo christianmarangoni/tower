@@ -17,8 +17,8 @@ all:
         a: '111'
         b: '222'
         c: '333'
-        test1: null
+        test1: valuetest1
         test2:
-            var1: value1
+            var1: value1var1
     vars:
-        group_var1: value2
+        group_var1: value2groupvar1
