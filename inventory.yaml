@@ -1,13 +1,24 @@
 all:
-  hosts:
-    mail.example.com:
-  children:
-    webservers:
-      hosts:
-        foo.example.com:
-        bar.example.com:
-    dbservers:
-      hosts:
-        one.example.com:
-        two.example.com:
-        three.example.com:
+    children:
+        last_group:
+            hosts: test1
+            vars:
+                last_var: MYVALUE
+        other_group:
+            children:
+                group_x:
+                    hosts: test5
+            hosts:
+                test4:
+                    ansible_host: 127.0.0.1
+            vars:
+                g2_var2: value3
+    hosts:
+        a: '111'
+        b: '222'
+        c: '333'
+        test1: null
+        test2:
+            var1: value1
+    vars:
+        group_var1: value2
