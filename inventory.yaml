@@ -9,7 +9,8 @@ all:
           instancehost: 2a
         host2:
   vars:
-    some_server: foo.southeast.example.com
-    halon_system_timeout: 30
-    self_destruct_countdown: 60
-    escape_pods: 2
+    jboss_eap_instances:
+      - NOMEISTANZA: nome_istanza
+        jboss_ver: versione_ver
+        jboss_minor_ver: minor_ver
+        jboss_jvm_option: jvm_option
