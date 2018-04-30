@@ -1,4 +1,4 @@
-all:children:usachildren:southeast:
+all:
   children:
     atlanta:
       hosts:
