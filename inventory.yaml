@@ -1,7 +1,7 @@
 all: # keys must be unique, i.e. only one 'hosts' per gro
   hosts:
     children:
-      jboss1
+      jboss1:
         test1:
         test2:
           vars:
