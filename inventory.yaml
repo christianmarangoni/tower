@@ -1,6 +1,6 @@
 all:
   hosts:
-    host3:
+    mail.example.com:
   children:
     atlanta:
       hosts:
